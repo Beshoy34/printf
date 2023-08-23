@@ -5,7 +5,7 @@
  * handle_write_char - Prints a string
  * @c: char types.
  * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags.
+ * @flags:  calculates all active flags.
  * @width: get width.
  * @precision: precision specifier
  * @size: Size specifier
@@ -47,10 +47,10 @@ int handle_write_char(char c, char buffer[],
 /************************* WRITE NUMBER *************************/
 /**
  * write_number - Prints a string
- * @is_negative: Lista of arguments
- * @ind: char types.
+ * @is_negative: List of arguments
+ * @ind: charcters types.
  * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
+ * @flags:  Calculates all active flags
  * @width: get width.
  * @precision: precision specifier
  * @size: Size specifier
@@ -79,8 +79,8 @@ int write_number(int is_negative, int ind, char buffer[],
 }
 
 /**
- * write_num - Write a number using a bufffer
- * @ind: Index at which the number starts on the buffer
+ * write_num - Write number using a bufffer
+ * @ind: Index at which a number starts on the buffer
  * @buffer: Buffer
  * @flags: Flags
  * @width: width
@@ -140,8 +140,8 @@ int write_num(int ind, char buffer[],
 /**
  * write_unsgnd - Writes an unsigned number
  * @is_negative: Number indicating if the num is negative
- * @ind: Index at which the number starts in the buffer
- * @buffer: Array of chars
+ * @ind: Index at which number starts in the buffer
+ * @buffer: Array of charcters
  * @flags: Flags specifiers
  * @width: Width specifier
  * @precision: Precision specifier
@@ -197,12 +197,12 @@ int write_unsgnd(int is_negative, int ind,
 
 /**
  * write_pointer - Write a memory address
- * @buffer: Arrays of chars
+ * @buffer: Arrays of charcters
  * @ind: Index at which the number starts in the buffer
- * @length: Length of number
+ * @length: Length of the number
  * @width: Width specifier
  * @flags: Flags specifier
- * @padd: Char representing the padding
+ * @padd: Charcter representing the padding
  * @extra_c: Char representing extra char
  * @padd_start: Index at which padding should start
  *
